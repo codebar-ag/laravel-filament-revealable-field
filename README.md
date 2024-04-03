@@ -7,7 +7,7 @@
 
 ## 💡 What is Filament Revealable Field?
 
-Filament Revealable Field is a Filament wrapper for Codemirror.
+Filament Revealable Field is a Infolist Field for toggling the advisability of data.
 
 ## 🛠 Requirements
 
