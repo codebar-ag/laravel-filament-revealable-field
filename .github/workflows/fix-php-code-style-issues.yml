@@ -1,17 +1,10 @@
 name: Fix PHP code style issues
 
-on:
-  push:
-    paths:
-      - '**.php'
-
-permissions:
-  contents: write
+on: [push]
 
 jobs:
   php-code-styling:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
 
     steps:
       - name: Checkout code

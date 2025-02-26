@@ -1,12 +1,12 @@
 {
-    "name": "codebar-ag/filament-revealable-field",
-    "description": "This is my package filament-revealable-field",
+    "name": "codebar-ag/laravel-filament-revealable-field",
+    "description": "This is my package laravel-filament-revealable-field",
     "keywords": [
         "CodebarAg",
         "laravel",
-        "filament-revealable-field"
+        "laravel-filament-revealable-field"
     ],
-    "homepage": "https://github.com/codebarag/filament-revealable-field",
+    "homepage": "https://github.com/codebarag/laravel-filament-revealable-field",
     "license": "MIT",
     "authors": [
         {
