@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/ReflectionMapper.php' => 
     array (
-      0 => '8a00162fd40b469db622ae9c144d34b7d913e687',
+      0 => '5f05b6d1b2c8df45a359adb5fe759804be2c3b29',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\reflectionmapper',
@@ -16,11 +16,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'sebastianbergmann\\type\\fromparametertypes',
         1 => 'sebastianbergmann\\type\\fromreturntype',
-        2 => 'sebastianbergmann\\type\\mapnamedtype',
-        3 => 'sebastianbergmann\\type\\mapuniontype',
-        4 => 'sebastianbergmann\\type\\mapintersectiontype',
-        5 => 'sebastianbergmann\\type\\hasreturntype',
-        6 => 'sebastianbergmann\\type\\returntype',
+        2 => 'sebastianbergmann\\type\\frompropertytype',
+        3 => 'sebastianbergmann\\type\\mapnamedtype',
+        4 => 'sebastianbergmann\\type\\mapuniontype',
+        5 => 'sebastianbergmann\\type\\mapintersectiontype',
+        6 => 'sebastianbergmann\\type\\hasreturntype',
+        7 => 'sebastianbergmann\\type\\returntype',
       ),
       3 => 
       array (
@@ -28,7 +29,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/GenericObjectType.php' => 
     array (
-      0 => '221b8ca85168f7b0d874cc1290cf65b735418573',
+      0 => '90a21f1e803a2986b7eeee2f7ddf5b57b23fdbec',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\genericobjecttype',
@@ -47,7 +48,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/SimpleType.php' => 
     array (
-      0 => '944a27ab5f219fd6a1a61c3a3b84feab408d011f',
+      0 => '03509b2ff7f7005b4c4afe6f6b3c89ccd8e12a2f',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\simpletype',
@@ -68,7 +69,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/Type.php' => 
     array (
-      0 => '83422072ac3eaefbd625bebac134874f41ef9231',
+      0 => '164ba4ce5de99b1ae2c6c0a1c5ad2f140409279a',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\type',
@@ -103,7 +104,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/NullType.php' => 
     array (
-      0 => '08ed2ad313095447e18189a0386d144f53da8305',
+      0 => '86694eff276f25f27f277549b5d9e91d00b7d0c0',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\nulltype',
@@ -122,7 +123,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/ObjectType.php' => 
     array (
-      0 => '6885c4d7b7193e1d9114095d432c1d32863702e1',
+      0 => 'addf53b5282463b386308b7e8cb8f3efab0e3721',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\objecttype',
@@ -142,7 +143,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/CallableType.php' => 
     array (
-      0 => '64da7fb014cbd8f6f38fdbf5ecfb3c13c243048c',
+      0 => '6bc5d9eb83a4b79327868a17fd739fdda69a791a',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\callabletype',
@@ -166,7 +167,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/UnionType.php' => 
     array (
-      0 => '0b178bbadaf2b32c03c2a775044d82a4498009dc',
+      0 => 'e00b10fc348196b3faa7f839c3e2c3d3ea328ef4',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\uniontype',
@@ -190,7 +191,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/NeverType.php' => 
     array (
-      0 => '10268d51baf13adedd9fe956eb6351a292b1671f',
+      0 => 'd2bef1e0de9200890269e3f5fa716cb888eb46ce',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\nevertype',
@@ -208,7 +209,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/StaticType.php' => 
     array (
-      0 => '16a819ad01bc24227f40dac8ab789bf7f626c1ca',
+      0 => '6a25d1dcc8000c5e06af28c47cfc8fe70769b2ef',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\statictype',
@@ -227,7 +228,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/UnknownType.php' => 
     array (
-      0 => '24615ad885ad2814946b219c638f52faaa0b91ac',
+      0 => '5c35c049e5a939c13ab2eda15d976368664e514d',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\unknowntype',
@@ -246,7 +247,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/TrueType.php' => 
     array (
-      0 => '7e9ce1ad3064bd2a7390d2818d3f64edaeb4df78',
+      0 => 'fb53a4d00920f4333556e9238f978cee51e9c6d5',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\truetype',
@@ -264,7 +265,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/VoidType.php' => 
     array (
-      0 => '41d563a0e01fd40abe2aae8e737c1a752343b820',
+      0 => '36306fc76e3359a1948e2ca8541899f00352dc23',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\voidtype',
@@ -282,7 +283,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/IntersectionType.php' => 
     array (
-      0 => 'fc8cea695ddc4b33cf0d16f32d56f7e9098966f2',
+      0 => 'a8d302515d0ecb2e91526284cc2c1e187b8fd57b',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\intersectiontype',
@@ -306,7 +307,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/MixedType.php' => 
     array (
-      0 => '16c10beda8b6803982cfd2e15ae4fef2ad39affa',
+      0 => '876ce137de0543622c701676f2f4e5451136f2a0',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\mixedtype',
@@ -325,7 +326,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/IterableType.php' => 
     array (
-      0 => '2c6e3d5dcf3f151023f2216a1e762d3d17bafb28',
+      0 => '3466f145571228db152bd492099b974a87968236',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\iterabletype',
@@ -344,7 +345,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/type/FalseType.php' => 
     array (
-      0 => '19fa4beb16fb340136e3bcb6114d591f5eb40b57',
+      0 => '2ace94bb063bde06ae2c0219a77a98000860cdc5',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\falsetype',
@@ -362,7 +363,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/TypeName.php' => 
     array (
-      0 => '25ef01000d201c93da1933d8c4562ebc343a984e',
+      0 => '3542d9da97b5f6bc5238f7a0511251fb6c57afb5',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\typename',
@@ -383,7 +384,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/exception/RuntimeException.php' => 
     array (
-      0 => 'f0d05315ccfb3949e65f361e9bf1c9dcf97832d1',
+      0 => 'dc36595e29c96c23c5d6328d306db02cc76e63fb',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\runtimeexception',
@@ -397,7 +398,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/exception/Exception.php' => 
     array (
-      0 => '7f14b4dbe52976446bef1c1b08b924ab78fbbc3e',
+      0 => 'ea8fc19a2156a69c8b69f4ca0aee6caec9ecc698',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\exception',
@@ -411,7 +412,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/type/src/Parameter.php' => 
     array (
-      0 => '718329ebcb297112f5ab03dd354d82c0b192e8f2',
+      0 => '35330c0c3ed3e98ba399bc97496d37698bfabc2c',
       1 => 
       array (
         0 => 'sebastianbergmann\\type\\parameter',

@@ -7,7 +7,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
   array (
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/ArrayComparator.php' => 
     array (
-      0 => 'ba765e9772fead304b22d1cc6b3666c450d984dd',
+      0 => '0762c0b8f0283f3a12eba475e68bb7e18136f2dd',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\arraycomparator',
@@ -40,7 +40,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/Factory.php' => 
     array (
-      0 => 'cfd868326ee3fd4269669d022a6755926b25c73b',
+      0 => '9b6254ffac6ddd1c9173d0ae37f852de3d9bbda1',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\factory',
@@ -78,7 +78,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/MockObjectComparator.php' => 
     array (
-      0 => '40a9bd3da478de9eb491918773cd22e09460f0b9',
+      0 => 'a2456a9ee515f4a6addd8dc6fd039b4990797cb9',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\mockobjectcomparator',
@@ -94,7 +94,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/ObjectComparator.php' => 
     array (
-      0 => '7deb90633d3a58879af332b0c92d395beda6a465',
+      0 => 'b4afaa81066faf1196f2a31bc54440c2274266b1',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\objectcomparator',
@@ -111,7 +111,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/NumericComparator.php' => 
     array (
-      0 => '4ca478d8e32d6d0ef13e359f01149856e6e99375',
+      0 => '7a690849336b304a0fad6156efb1786386676947',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\numericcomparator',
@@ -157,7 +157,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/DateTimeComparator.php' => 
     array (
-      0 => 'cefac9ad36f21d6d895d4b3406c3c1d6c971ef88',
+      0 => '3242d8422b096e75ff332c4964dbe8819b5c58c5',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\datetimecomparator',
@@ -166,7 +166,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'sebastianbergmann\\comparator\\accepts',
         1 => 'sebastianbergmann\\comparator\\assertequals',
-        2 => 'sebastianbergmann\\comparator\\datetimetostring',
       ),
       3 => 
       array (
@@ -174,7 +173,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/ScalarComparator.php' => 
     array (
-      0 => '24c889b06ba8a4f52785de1a2ece3b31134dc450',
+      0 => '4054db6501f1d8ca4633838feac034d01af1a2f3',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\scalarcomparator',
@@ -183,6 +182,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'sebastianbergmann\\comparator\\accepts',
         1 => 'sebastianbergmann\\comparator\\assertequals',
+        2 => 'sebastianbergmann\\comparator\\removeoverlongcommonprefix',
+        3 => 'sebastianbergmann\\comparator\\findcommonprefix',
+        4 => 'sebastianbergmann\\comparator\\removeoverlongcommonsuffix',
+        5 => 'sebastianbergmann\\comparator\\findcommonsuffix',
       ),
       3 => 
       array (
@@ -190,7 +193,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/ExceptionComparator.php' => 
     array (
-      0 => 'e0fa190d93572e58e122c3d1c92487ee12c5bae2',
+      0 => '6903f3314181ea2f25478c45a8d694fe57d54e3e',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\exceptioncomparator',
@@ -224,7 +227,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/DOMNodeComparator.php' => 
     array (
-      0 => '869ab8b04cf7425b03c5c9c8f78efd272906ecec',
+      0 => '59f3cbd6cd783a70863941e3b09ca2112d6c8511',
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\domnodecomparator',
@@ -266,6 +269,38 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       1 => 
       array (
         0 => 'sebastianbergmann\\comparator\\splobjectstoragecomparator',
+      ),
+      2 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\accepts',
+        1 => 'sebastianbergmann\\comparator\\assertequals',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/NumberComparator.php' => 
+    array (
+      0 => '4fe968b48b5ec6f58911f7bacc643d3083545c66',
+      1 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\numbercomparator',
+      ),
+      2 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\accepts',
+        1 => 'sebastianbergmann\\comparator\\assertequals',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/Users/rhyslees/Code/Packages/codebar-ag/filament-revealable-field/vendor/sebastian/comparator/src/EnumerationComparator.php' => 
+    array (
+      0 => '8bf8b606dbe97642f5335b7eaabe7ce2a25abf70',
+      1 => 
+      array (
+        0 => 'sebastianbergmann\\comparator\\enumerationcomparator',
       ),
       2 => 
       array (
