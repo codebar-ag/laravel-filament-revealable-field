@@ -1,8 +1,8 @@
 import * as esbuild from 'esbuild';
 
 esbuild.build({
-    entryPoints: ['./resources/js/filament-revealable-field.js'],
-    outfile: './dist/filament-revealable-field.js',
+    entryPoints: ['./resources/js/laravel-filament-revealable-field.js'],
+    outfile: './dist/laravel-filament-revealable-field.js',
     bundle: true,
     mainFields: ['module', 'main'],
     platform: 'browser',

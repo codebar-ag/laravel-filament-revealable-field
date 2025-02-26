@@ -18,15 +18,15 @@ class FilamentRevealableFieldServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('filament-revealable-field')
+            ->name('laravel-filament-revealable-field')
             ->hasViews();
     }
 
     public function packageBooted()
     {
         FilamentAsset::register([
-            Css::make('filament-revealable-field', __DIR__.'/../dist/filament-revealable-field.css'),
-            Js::make('filament-revealable-field', __DIR__.'/../dist/filament-revealable-field.js'),
-        ], 'filament-revealable-field');
+            Css::make('laravel-filament-revealable-field', __DIR__.'/../dist/laravel-filament-revealable-field.css'),
+            Js::make('laravel-filament-revealable-field', __DIR__.'/../dist/laravel-filament-revealable-field.js'),
+        ], 'laravel-filament-revealable-field');
     }
 }
