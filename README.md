@@ -14,7 +14,7 @@ Filament Revealable Field is an Infolist Field for toggling the advisability of 
 | Package |     PHP     | Laravel | Filament Infolists |
 |:-------:|:-----------:|:-------:|--------------------|
 | v12.0.0 | ^8.2 - ^8.4 |  12.x   | ^3.3               |
-| v11.0.0 | ^8.2 - ^8.3 |  11.x   | ^3.2               |
+| v2.0.0  | ^8.2 - ^8.3 |  11.x   | ^3.2               |
 | v1.0.0  | ^8.2 - ^8.3 |  11.x   | ^3.2               |
 
 
