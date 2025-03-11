@@ -6,5 +6,5 @@ use Filament\Infolists\Components\Entry;
 
 class RevealableEntry extends Entry
 {
-    protected string $view = 'laravel-filament-revealable-field::infolists.components.revealable-entry';
+    protected string $view = 'filament-revealable-field::infolists.components.revealable-entry';
 }
