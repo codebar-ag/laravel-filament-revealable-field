@@ -51,7 +51,7 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
                     </div>
                 </div>
                 <div class="flex-1 min-w-0">
-                    <?php if ($isCopyable): ?>
+                    <?php if ($isCopyable) { ?>
                     <div 
                         x-show="show" 
                         class="fi-size-sm fi-in-text-item fi-copyable fi-wrapped fi-in-text"
@@ -74,12 +74,12 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
                     >
                         <?= str_repeat('*', strlen($state)) ?>
                     </div>
-                    <?php else: ?>
+                    <?php } else { ?>
                     <p x-show="show" class="text-sm">
                         <?= e($state) ?>
                     </p>
                     <p x-show="!show" class="text-sm strikethrough"><?= str_repeat('*', strlen($state)) ?></p>
-                    <?php endif; ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
