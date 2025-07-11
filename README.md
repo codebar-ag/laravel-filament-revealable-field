@@ -26,6 +26,14 @@ You can install the package via composer:
 composer require codebar-ag/laravel-filament-revealable-field
 ```
 
+### CSS Setup
+
+Add the following to your `resources/css/app.css` file:
+
+```css
+@source '../../vendor/codebar-ag/laravel-filament-revealable-field/src/Infolists/Components/RevealableEntry.php';
+```
+
 
 ## Usage
 
