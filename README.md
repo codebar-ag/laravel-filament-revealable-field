@@ -7,13 +7,13 @@
 
 ## 💡 What is Filament Revealable Field?
 
-Filament Revealable Field is an Infolist Field for toggling the advisability of data.
+Filament Revealable Field is an Infolist Field for toggling the visibility of sensitive data. It provides a secure way to display confidential information that can be revealed on demand, with optional copy-to-clipboard functionality.
 
 ## 🛠 Requirements
 
 | Package |     PHP     | Laravel | Filament Infolists |
 |:-------:|:-----------:|:-------:|--------------------|
-| v12.0.0 | ^8.2 - ^8.4 |  12.x   | ^3.3               |
+| v3.0.0  | ^8.2        |  12.x   | ^4.0               |
 | v2.0.0  | ^8.2 - ^8.3 |  11.x   | ^3.2               |
 | v1.0.0  | ^8.2 - ^8.3 |  11.x   | ^3.2               |
 
@@ -24,7 +24,6 @@ You can install the package via composer:
 
 ```bash
 composer require codebar-ag/laravel-filament-revealable-field
-php artisan filament:assets
 ```
 
 
@@ -36,16 +35,42 @@ use CodebarAg\FilamentRevealableField\Infolists\Components\RevealableEntry;
 
 ...
 
-public function form(Form $form): Form
+public function infolist(Infolist $infolist): Infolist
 {
-    return $form
+    return $infolist
         ->schema([
             RevealableEntry::make('revealable')
-                ->label('REVEALABLE');
+                ->label('REVEALABLE')
+                ->copyable() // Enable copy functionality
+                ->copyMessage('Value copied!') // Custom copy message
+                ->copyableState('Custom copy text'); // Custom text to copy
         ]);
 }
 ...
 ````
+
+## 📋 Features
+
+### Revealable Content
+- Click the eye icon to toggle visibility of sensitive data
+- Hidden content is displayed as asterisks (`********`)
+- Secure by default - content is hidden until explicitly revealed
+
+### Copyable Content
+- Enable copy-to-clipboard functionality with `->copyable()`
+- Customize copy message with `->copyMessage('Custom message')`
+- Set custom text to copy with `->copyableState('Custom text')`
+- Set copy message duration with `->copyMessageDuration(3000)`
+
+### Available Methods
+```php
+RevealableEntry::make('field_name')
+    ->label('Field Label')
+    ->copyable() // Enable copy functionality
+    ->copyMessage('Value copied to clipboard!') // Custom success message
+    ->copyableState('Custom text to copy') // Custom text to copy (defaults to field value)
+    ->copyMessageDuration(3000); // Message duration in milliseconds (default: 2000)
+```
 
 ## 🚧 Testing
 
@@ -61,14 +86,7 @@ Run the tests:
 ./vendor/bin/pest
 ```
 
-## 🚧 Building
 
-```bash
-node bin/build
-npx tailwindcss -i resources/css/laravel-filament-revealable-field.css -o dist/laravel-filament-revealable-field.css
-```
-
-Note: there is no output, but the build will be in the `dist` directory.
 
 ## 📝 Changelog
 
