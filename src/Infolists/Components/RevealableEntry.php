@@ -34,7 +34,7 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
         ob_start(); ?>
 
         <div <?= $attributes->toHtml() ?>>
-            <div class="mt-2 flex items-center text-center" x-data="{ show: false }">
+            <div class="mt-2 flex items-center" x-data="{ show: false }">
                 <div class="flex py-1.5 pr-1.5">
                     <div x-on:click="show = !show" class="inset-y-0 right-0 flex py-1.5 pr-1.5 min-h-10">
                         <div class="flex items-center rounded border border-gray-200 px-1 font-sans text-xs text-gray-400">
@@ -50,24 +50,26 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
                         </div>
                     </div>
                 </div>
-                <?php if ($isCopyable): ?>
-                <div 
-                    x-show="show" 
-                    class="fi-size-sm  fi-in-text-item  fi-copyable fi-wrapped  fi-in-text"
-                    x-on:click="window.navigator.clipboard.writeText(<?= $copyableStateJs ?>)
-                        $tooltip(<?= $copyMessageJs ?>, {
-                            theme: $store.theme,
-                            timeout: <?= $copyMessageDurationJs ?>,
-                        })"
-                >
-                    <?= e($state) ?>
+                <div class="flex-1 min-w-0">
+                    <?php if ($isCopyable): ?>
+                    <div 
+                        x-show="show" 
+                        class="fi-size-sm fi-in-text-item fi-copyable fi-wrapped fi-in-text"
+                        x-on:click="window.navigator.clipboard.writeText(<?= $copyableStateJs ?>)
+                            $tooltip(<?= $copyMessageJs ?>, {
+                                theme: $store.theme,
+                                timeout: <?= $copyMessageDurationJs ?>,
+                            })"
+                    >
+                        <?= e($state) ?>
+                    </div>
+                    <?php else: ?>
+                    <p x-show="show" class="text-sm">
+                        <?= e($state) ?>
+                    </p>
+                    <?php endif; ?>
+                    <p x-show="!show" class="text-sm strikethrough"><?= str_repeat('*', strlen($state)) ?></p>
                 </div>
-                <?php else: ?>
-                <p x-show="show" class="text-sm">
-                    <?= e($state) ?>
-                </p>
-                <?php endif; ?>
-                <p x-show="!show" class="text-sm strikethrough">&ast;&ast;&ast;&ast;&ast;&ast;&ast;&ast;</p>
             </div>
         </div>
 
