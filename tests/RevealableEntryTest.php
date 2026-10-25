@@ -1,6 +1,7 @@
 <?php
 
 use CodebarAg\FilamentRevealableField\Infolists\Components\RevealableEntry;
+use CodebarAg\FilamentRevealableField\Tests\Fixtures\SecretLevel;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
@@ -56,4 +57,26 @@ it('escapes the copyable state inside the click handler', function () {
         ->toContain('fi-copyable')
         ->not->toContain('a"b')
         ->not->toContain('<d>');
+});
+
+it('renders a numeric state', function () {
+    $html = renderRevealableEntry(12345);
+
+    expect($html)
+        ->toContain('12345')
+        ->toContain('>*****<');
+});
+
+it('renders a numeric state when copyable', function () {
+    $html = renderRevealableEntry(1234, fn (RevealableEntry $entry) => $entry->copyable());
+
+    expect($html)
+        ->toContain('1234')
+        ->toMatch('/>\s*\*{4}\s*</');
+});
+
+it('masks a backed enum state by its value', function () {
+    $html = renderRevealableEntry(SecretLevel::High);
+
+    expect($html)->toContain('>****<');
 });
