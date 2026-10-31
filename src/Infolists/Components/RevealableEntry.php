@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace CodebarAg\FilamentRevealableField\Infolists\Components;
 
+use BackedEnum;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Contracts\HasEmbeddedView;
 use Illuminate\Support\Js;
@@ -17,6 +18,8 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
         if (blank($state)) {
             return '';
         }
+
+        $mask = str_repeat('*', strlen($state instanceof BackedEnum ? (string) $state->value : (string) $state));
 
         $attributes = $this->getExtraAttributeBag()
             ->class([
@@ -72,13 +75,13 @@ class RevealableEntry extends TextEntry implements HasEmbeddedView
                                 timeout: <?= $copyMessageDurationJs ?>,
                             })"
                     >
-                        <?= str_repeat('*', strlen($state)) ?>
+                        <?= $mask ?>
                     </div>
                     <?php } else { ?>
                     <p x-show="show" class="text-sm">
                         <?= e($state) ?>
                     </p>
-                    <p x-show="!show" class="text-sm strikethrough"><?= str_repeat('*', strlen($state)) ?></p>
+                    <p x-show="!show" class="text-sm strikethrough"><?= $mask ?></p>
                     <?php } ?>
                 </div>
             </div>
