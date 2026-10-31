@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-filament-revealable-field` will be documented in this file.
 
+## [Unreleased]
+
+### Removed
+- PHP 8.2 support: `composer.json` now requires PHP ^8.3 (the CI matrix never covered 8.2).
+
 ## [3.0.0] - 2025-07-11
 
 ### Added

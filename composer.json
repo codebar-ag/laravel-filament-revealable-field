@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "filament/infolists": "^4.0",
         "illuminate/contracts": "^12.0|^13.0",
         "livewire/livewire": "^3.6",
